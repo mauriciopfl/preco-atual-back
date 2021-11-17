@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nome": {
+    "nome": {
       "type": "string"
     },
-    "Descricao": {
+    "descricao": {
       "type": "string"
     },
-    "Foto": {
+    "foto": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,17 +30,20 @@
       "required": false,
       "pluginOptions": {}
     },
-    "FotoURL": {
+    "foto_url": {
       "type": "string"
     },
-    "Link": {
+    "link": {
       "type": "string"
     },
-    "Valor": {
+    "valor": {
       "type": "decimal"
     },
-    "Telefone": {
+    "external_id": {
       "type": "string"
+    },
+    "estabelecimento": {
+      "model": "estabelecimentos"
     }
   }
 }
