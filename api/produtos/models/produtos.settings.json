@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "produtos",
   "info": {
-    "name": "Produtos"
+    "name": "Produtos",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -37,6 +38,9 @@
     },
     "Valor": {
       "type": "decimal"
+    },
+    "Telefone": {
+      "type": "string"
     }
   }
 }
