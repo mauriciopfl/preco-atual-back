@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estabelecimentos",
+  "info": {
+    "name": "Estabelecimentos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Site": {
+      "type": "string"
+    },
+    "Logotipo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Endereco": {
+      "type": "string"
+    }
+  }
+}
