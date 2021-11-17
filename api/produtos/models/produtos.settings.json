@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produtos",
+  "info": {
+    "name": "produtos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "external_id": {
+      "type": "string"
+    },
+    "estabelecimentos": {
+      "model": "estabelecimentos"
+    },
+    "produto_categoria": {
+      "model": "produto-categoria"
+    }
+  }
+}
