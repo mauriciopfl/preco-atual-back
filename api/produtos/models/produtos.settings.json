@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "produtos",
   "info": {
-    "name": "produtos"
+    "name": "produtos",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,6 +29,9 @@
     },
     "produto_categoria": {
       "model": "produto-categoria"
+    },
+    "valor": {
+      "type": "decimal"
     }
   }
 }
